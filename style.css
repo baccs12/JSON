@@ -1,7 +1,8 @@
 .wrapper {
     width: 960px;
     margin: 0 auto;
-    /*border: 1px solid red;*/
+    overflow: hidden;
+       /*border: 1px solid red;*/
 }
 
  .message {
@@ -37,3 +38,30 @@
     border-radius: 20px;
     margin-top: 20px;
  }
+
+a span {
+    padding: 15px 200px;
+    border-radius: 20px;
+    float: left;
+    margin-top: 20px;
+    background: #ccc;
+    color: black;
+}
+
+.date {
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.date-wrapper {
+    width: 100%;
+}
+.date-content {
+    width: 187px;
+    margin: 0 auto;
+}
+.date-content > input {
+    align: center;
+}

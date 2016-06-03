@@ -13,40 +13,27 @@
 <div class="wrapper">
         <div class="header">
             <h1>To-Do Title </h1>
-            <textarea name="title" class="title" placeholder="title"></textarea>
+            <textarea name="title" class="title" placeholder="Title"></textarea>
         </div>
         <div>
             <textarea name="message" class="message" placeholder="Message"></textarea>
-
         </div>
+
+
+        <!-- date -->
+        <div class="date-wrapper">
+        <div class="date-content">
+            <input class="date" type="date" name="date" type="submit">
+        </div>
+    </div>
+
+
         <input class="post" type="submit" value="Save">
-
-
-        <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-</head>
-
-<body onload="startTime()">
-
-<div id="txt"></div>
-
-    </form>
+        <a href="view.php"><span>View</span></a>
 </div>
+
+
+</form>
 
 </body>
 </html>
